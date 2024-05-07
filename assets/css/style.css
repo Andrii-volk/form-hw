@@ -1,5 +1,5 @@
-:root {
-  --color-grey: rgb(118, 118, 118);
+:root{
+  --color-grey:  rgb(173, 173, 173);
 }
 * {
   box-sizing: border-box;
@@ -9,12 +9,33 @@ body {
   width: 100vh;
   background-color: rgb(99 115 138);
 }
+h1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: var(--color-grey);
+}
+h1::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 16px;
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: var(--color-grey);
+}
 
 h1,
 p {
   text-align: center;
 }
 h1 {
+  position: relative;
   margin-bottom: 10px;
   font-size: 2em;
   text-transform: capitalize;
@@ -22,7 +43,11 @@ h1 {
 
 input {
   padding: 10px 5px;
-  /* border-radius: 3px; */
+  border: 1px solid rgb(226 226 227);
+  border-radius: 3px;
+  
+
+
 }
 .register-name {
   display: flex;
@@ -31,11 +56,6 @@ input {
   padding: 0;
 }
 .register-name input {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* display: inline; */
-  /* position: relative; */
-  /* top: 0;margin-left: auto; */
   width: 150px;
 }
 
@@ -44,7 +64,8 @@ label a {
   text-decoration: none;
 }
 
-div+p,a{
+div + p,
+a {
   color: white;
 }
 p {
@@ -56,7 +77,6 @@ div {
   width: 400px;
   min-width: 200px;
   background-color: rgb(242 243 247);
-  /* text-align: center; */
 }
 form {
   display: flex;
@@ -81,4 +101,13 @@ form {
 }
 .color-grey {
   color: var(--color-grey);
+}
+
+.box-shadow:focus {
+  border:none;
+  outline: none;
+  box-shadow: 0px 0px 5px 2px #8dff99;
+}
+.Sign-in{
+  margin-left: 5px;
 }

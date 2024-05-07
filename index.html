@@ -10,32 +10,34 @@
   <body>
     <section>
       <div>
-        <h1>register</h1>
+        <h1 class="one-line">register</h1>
         <p class="color-grey">
           Create your account.It's free and only takes a minute
         </p>
         <form action="#" method="POST" enctype="multipart/form-data">
           <div class="register-name">
-            <input type="text" name="First name" placeholder="First name" required autofocus />
-            <input type="text" name="Last Name" placeholder="Last Name" require />
+            <input class="box-shadow" type="text" name="First name" placeholder="First name" required autofocus />
+            <input class="box-shadow" type="text" name="Last Name" placeholder="Last Name" required />
           </div>
-          <input type="text" name="Email" placeholder="Email" require />
-          <input type="password" name="user password " placeholder="Password" require />
+          <input class="box-shadow" type="text" name="Email" placeholder="Email" required />
+          <input class="box-shadow" type="password" name="user password " placeholder="Password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" />
           <input
+          class="box-shadow"
             type="password"
             name="Confirm password"
             placeholder="Confirm Password"
-            require
+            required
+            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
           />
           <label class="color-grey">
-            <input type="checkbox" name="terms" />i accept the
-            <a href="" target="_blank">Terms of User</a> &
-            <a href="" target="_blank">Privacy Policy</a></label
+            <input class="box-shadow" type="checkbox" name="terms" />i accept the
+            <a class="box-shadow" href="#" target="_blank">Terms of User</a> &
+            <a class="box-shadow" href="#" target="_blank">Privacy Policy</a></label
           >
-          <input class="submit one-line" type="submit" value="Register Now" />
+          <input class="submit one-line box-shadow" type="submit" value="Register Now" />
         </form>
       </div>
-      <p>Alredy have an account?<a href="">Sign in</a></p>
+      <p>Alredy have an account?<a class="box-shadow Sign-in" href="#">Sign in</a></p>
     </section>
   </body>
 </html>
