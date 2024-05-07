@@ -1,16 +1,18 @@
-:root{
-  --color-grey:  rgb(173, 173, 173);
+:root {
+  --color-grey: rgb(173, 173, 173);
 }
 * {
   box-sizing: border-box;
 }
 body {
-  padding-top: 10px;
   width: 100vh;
   background-color: rgb(99 115 138);
 }
-h1::before{
-  content: '';
+section {
+  margin: 0 auto;
+}
+h1::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 16px;
@@ -19,11 +21,11 @@ h1::before{
   width: 100px;
   background-color: var(--color-grey);
 }
-h1::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 16px;
+h1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 16px;
   display: block;
   height: 2px;
   width: 100px;
@@ -45,9 +47,6 @@ input {
   padding: 10px 5px;
   border: 1px solid rgb(226 226 227);
   border-radius: 3px;
-  
-
-
 }
 .register-name {
   display: flex;
@@ -104,10 +103,10 @@ form {
 }
 
 .box-shadow:focus {
-  border:none;
+  border: none;
   outline: none;
   box-shadow: 0px 0px 5px 2px #8dff99;
 }
-.Sign-in{
+.Sign-in {
   margin-left: 5px;
 }
